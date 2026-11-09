@@ -2,93 +2,280 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Humano Despierto, diseños</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Paletas Humano Despierto</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: una columna de lectura, cuatro fichas apiladas, cada una con su propia paleta como muestra. */
-:root{
-  --bg:#F7F5F0; --fg:#1E2422; --muted:#5F6866; --line:#DED9CC; --card:#FFFFFF; --accent:#8C6416;
-  --font:'Bricolage Grotesque',system-ui,sans-serif;
+/* Layout: una columna de lectura; cada propuesta es una lámina con maqueta real del sitio a la izquierda y sus tokens a la derecha. */
+:root {
+  --bg: #f6f5f1;
+  --surface: #ffffff;
+  --fg: #1d2033;
+  --muted: #565b70;
+  --line: #e2e1db;
+  --accent: #7a5a12;
+  --ok: #2f6b45;
+  --warn: #a8322a;
+  --font: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15181A;--fg:#ECE9E1;--muted:#A7ADA9;--line:#2C3133;--card:#1D2123;--accent:#E0B35A;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#15181A;--fg:#ECE9E1;--muted:#A7ADA9;--line:#2C3133;--card:#1D2123;--accent:#E0B35A;color-scheme:dark}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:17px;line-height:1.6;padding-block:48px 72px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-main{max-width:760px;margin:0 auto}
-h1{font-size:clamp(34px,6vw,54px);font-weight:700;letter-spacing:-.03em;line-height:1;margin:0 0 14px;text-wrap:balance}
-.lead{color:var(--muted);max-width:60ch;margin:0 0 44px}
-.lead b{color:var(--fg);font-weight:500}
-ol{list-style:none;padding:0;margin:0;display:grid;gap:18px}
-li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;display:grid;gap:12px}
-li header{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}
-h2{font-size:26px;font-weight:700;letter-spacing:-.02em;margin:0}
-h2 small{font-weight:400;color:var(--muted);font-size:17px;margin-left:8px}
-.sw{display:flex;gap:6px}
-.sw i{width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.08)}
-p{margin:0;color:var(--muted);max-width:62ch}
-a.go{justify-self:start;display:inline-flex;align-items:center;gap:8px;color:var(--fg);font-weight:500;text-decoration:none;border:1.5px solid var(--fg);padding:9px 16px;border-radius:999px;transition:background .25s,color .25s}
-a.go:hover{background:var(--fg);color:var(--bg)}
-a.go:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-h2.sec{font-size:15px;font-weight:600;color:var(--muted);margin:44px 0 14px;letter-spacing:.01em}
-.sub{color:var(--muted);margin:-6px 0 16px}
-.vars li{border-color:var(--fg)}
-.note{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:15px;max-width:62ch}
-</style>
-<main>
-  <h1>Humano Despierto: segunda ronda</h1>
-  <p class="lead">Elegiste la dirección <b>B «Brote»</b>. Acá están cuatro variantes de esa misma dirección, con la misma paleta, la misma tipografía y los mismos componentes: la página de inicio entera, con el programa de un curso por dentro, valoraciones, guías, testimonios, preguntas frecuentes y cómo pedir la inscripción. <b>Las tres usan los mismos cursos y textos</b>; cambia la composición. Probalas también desde el celular.</p>
-  <h2 class="sec">Variantes de B</h2>
-  <ol class="vars">
-    <li>
-      <header><h2>B1 <small>Huerta</small></h2><div class="sw" aria-hidden="true"><i style="background:#C7922E"></i><i style="background:#1F2E24"></i><i style="background:#CFDCCB"></i><i style="background:#FCFBF8"></i></div></header>
-      <p>Luz de día. La más cercana a la B original y a somosbuenavida.com: foto a pantalla completa con la voz de una guía, tarjetas de curso que se apoyan sobre la foto y suben al pasar el mouse, filtros por oficio, testimonios que rotan con pausa y botones.</p>
-      <a class="go" href="b1-huerta.html">Ver B1 Huerta</a>
-    </li>
-    <li>
-      <header><h2>B2 <small>Claro</small></h2><div class="sw" aria-hidden="true"><i style="background:#C7922E"></i><i style="background:#1F2E24"></i><i style="background:#CFDCCB"></i><i style="background:#FCFBF8"></i></div></header>
-      <p>Brote a plena luz y con más aire. El hero va partido: el texto sobre blanco y una foto grande al costado, con la frase de la guía apoyada encima. Muestra los tres pasos para empezar, un curso destacado grande arriba de la grilla, y una guía al frente con las demás en lista.</p>
-      <a class="go" href="b2-claro.html">Ver B2 Claro</a>
-    </li>
-    <li>
-      <header><h2>B3 <small>Raíz</small></h2><div class="sw" aria-hidden="true"><i style="background:#C7922E"></i><i style="background:#1F2E24"></i><i style="background:#CFDCCB"></i><i style="background:#FCFBF8"></i></div></header>
-      <p>Brote con el verde bosque al frente. El hero y la sección de cursos van sobre verde, con la miel como luz, y una raíz dibujada se traza al cargar la página. Debajo del hero corre una franja miel con los datos de la escuela.</p>
-      <a class="go" href="b3-raiz.html">Ver B3 Raíz</a>
-    </li>
-    <li>
-      <header><h2>B4 <small>Brote 2</small></h2><div class="sw" aria-hidden="true"><i style="background:#C7922E"></i><i style="background:#1F2E24"></i><i style="background:#CFDCCB"></i><i style="background:#FCFBF8"></i></div></header>
-      <p>La B original, sección por sección y con el mismo aspecto, pero arreglada: menú en el celular, contenido visible desde que carga, valoraciones en los cursos, enlace al perfil de cada guía y una sección final para empezar por la clase gratuita.</p>
-      <a class="go" href="b4-brote2.html">Ver B4 Brote 2</a>
-    </li>
-  </ol>
-  <h2 class="sec">Primera ronda</h2>
-  <p class="sub">Las cuatro direcciones originales, para comparar.</p>
-  <ol>
-    <li>
-      <header><h2>A <small>Amanecer</small></h2><div class="sw" aria-hidden="true"><i style="background:#B8791F"></i><i style="background:#0F1B2D"></i><i style="background:#E8DCC8"></i><i style="background:#FAF7F2"></i></div></header>
-      <p>Rigor. Una escuela con programa. El sol del hero es una foto del amanecer recortada sobre una línea de horizonte; el catálogo es una tabla de programa de estudios y el certificado está dibujado como papel. Serif de lectura y ámbar profundo.</p>
-      <a class="go" href="A-amanecer.html">Ver la dirección A</a>
-    </li>
-    <li>
-      <header><h2>B <small>Brote</small></h2><div class="sw" aria-hidden="true"><i style="background:#C7922E"></i><i style="background:#1F2E24"></i><i style="background:#CFDCCB"></i><i style="background:#FCFBF8"></i></div></header>
-      <p>Cercanía. La más parecida en estructura a somosbuenavida.com: foto de bosque a pantalla completa, cards con tarjeta blanca superpuesta, cifras rotativas y WhatsApp flotante. El titular es una guía hablando en primera persona. Verde bosque y miel, una sola tipografía.</p>
-      <a class="go" href="B-brote.html">Ver la dirección B</a>
-    </li>
-    <li>
-      <header><h2>C <small>Umbral</small></h2><div class="sw" aria-hidden="true"><i style="background:#C9922A"></i><i style="background:#2A1B3D"></i><i style="background:#EDE7F6"></i><i style="background:#FDFCFB"></i></div></header>
-      <p>Libertad. Fotos recortadas en arco de puerta y un hilo dorado de fases lunares que gira muy lento en el borde. Serif liviano a gran tamaño, tinta violeta y lavanda. Es la que conserva un hilo con la identidad actual del sitio.</p>
-      <a class="go" href="C-umbral.html">Ver la dirección C</a>
-    </li>
-    <li>
-      <header><h2>D <small>Mazo</small></h2><div class="sw" aria-hidden="true"><i style="background:#D29A2F"></i><i style="background:#124B4A"></i><i style="background:#E9E2D3"></i><i style="background:#F3EFE6"></i></div></header>
-      <p>Oficio. Sin fotografía: un mazo de cinco cartas ilustradas, una por oficio, que se abre en abanico; tipografía gruesa a gran tamaño y una cinta que corre con los cinco oficios. Verde azulado profundo y ocre.</p>
-      <a class="go" href="D-mazo.html">Ver la dirección D</a>
-    </li>
-  </ol>
-  <p class="note">Las fotos son de Unsplash y se reemplazan; en esta ronda cada una se revisó a mano para que muestre lo que dice. Los nombres de guías, cursos, precios y cifras son de muestra. Los logos son conceptos, no logos terminados: el de la dirección elegida se trabaja aparte.</p>
-</main>
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11131f; --surface: #191c2b; --fg: #eceaf2; --muted: #a9acbf; --line: #2b2f42;
+    --accent: #e2be6e; --ok: #7fc79a; --warn: #f08a80; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11131f; --surface: #191c2b; --fg: #eceaf2; --muted: #a9acbf; --line: #2b2f42;
+  --accent: #e2be6e; --ok: #7fc79a; --warn: #f08a80; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 64px;
+}
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: 40px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; letter-spacing: -0.02em; line-height: 1.15; }
+h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; }
+h2 { font-size: clamp(22px, 2.6vw, 28px); font-weight: 650; }
+p { margin: 0; }
+.intro { display: grid; gap: 14px; max-width: 70ch; }
+.intro p { color: var(--muted); }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.note { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; display: grid; gap: 8px; max-width: 80ch; }
+.note b { color: var(--fg); }
+.note p { color: var(--muted); }
+.tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 999px; border: 1px solid currentColor; }
+.tag.ok { color: var(--ok); } .tag.warn { color: var(--warn); }
 
+.prop { display: grid; gap: 18px; padding-top: 28px; border-top: 1px solid var(--line); }
+.prop-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; }
+.prop-head p { color: var(--muted); flex-basis: 100%; max-width: 72ch; }
+.letter { font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: .06em; }
+.reco { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: var(--accent); color: var(--bg); }
+.grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* Maqueta: colores propios de cada paleta, a propósito fijos (son la muestra). */
+.mock { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--m-fondo); color: var(--m-tinta); font-size: 14px; }
+.m-nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 18px; background: var(--m-papel); border-bottom: 1px solid var(--m-linea); }
+.m-logo { font-weight: 700; color: var(--m-titulo); font-size: 14px; }
+.m-links { display: flex; gap: 14px; font-size: 12px; color: var(--m-tinta); }
+@media (max-width: 480px) { .m-links span:nth-child(n+3) { display: none; } }
+.m-hero { position: relative; padding: 56px 22px 28px; background: var(--m-noche); color: #fff; isolation: isolate; }
+.m-hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.m-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--m-velo); }
+.m-hero .m-eye { color: var(--m-oro); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.m-hero h3 { color: #fff; font-size: clamp(20px, 2.6vw, 28px); font-weight: 650; margin: 6px 0 8px; max-width: 22ch; }
+.m-hero p { color: rgba(255,255,255,.88); max-width: 46ch; font-size: 13px; }
+.m-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.m-btn { display: inline-flex; align-items: center; min-height: 36px; padding: 0 16px; border-radius: 999px; font-weight: 600; font-size: 12px; background: var(--m-boton); color: var(--m-boton-txt); border: 1.5px solid var(--m-boton); }
+.m-btn.ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.7); }
+.m-sec { padding: 24px 22px; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 18px; align-items: center; }
+@media (max-width: 520px) { .m-sec { grid-template-columns: minmax(0, 1fr); } }
+.m-sec .m-eye { color: var(--m-link); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.m-sec h4 { margin: 4px 0 8px; color: var(--m-titulo); font-size: 19px; line-height: 1.2; font-weight: 650; letter-spacing: -.01em; text-wrap: balance; }
+.m-sec p { color: var(--m-suave); font-size: 13px; }
+.m-sec .m-link { display: inline-block; margin-top: 10px; color: var(--m-link); font-weight: 600; font-size: 12px; text-decoration: underline; text-underline-offset: 3px; }
+.m-card { background: var(--m-papel); border: 1px solid var(--m-linea); border-radius: 12px; overflow: hidden; }
+.m-card img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.m-card div { padding: 10px 12px 12px; display: grid; gap: 4px; }
+.m-chip { justify-self: start; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--m-chip); color: var(--m-chip-txt); }
+.m-card b { color: var(--m-titulo); font-size: 13px; }
+.m-card small { color: var(--m-suave); font-size: 11px; }
+.m-band { background: var(--m-sup); padding: 16px 22px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.m-band b { color: var(--m-titulo); font-size: 14px; }
+.m-band span { color: var(--m-suave); font-size: 12px; }
+.m-foot { background: var(--m-pie); color: rgba(255,255,255,.85); padding: 12px 22px; font-size: 11px; }
+
+.side { display: grid; gap: 14px; min-width: 0; }
+.sw { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.s { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px; }
+.s i { width: 34px; height: 34px; border-radius: 8px; border: 1px solid rgba(127,127,127,.25); }
+.s span { display: grid; line-height: 1.25; min-width: 0; }
+.s b { font-size: 12px; } .s code { font-size: 11px; color: var(--muted); font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+.ratios { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 4px; font-size: 13px; }
+.ratios div { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); }
+.ratios div b { color: var(--fg); font-variant-numeric: tabular-nums; }
+.pros { display: grid; gap: 6px; font-size: 14px; color: var(--muted); padding-left: 18px; margin: 0; }
+.pros li::marker { color: var(--accent); }
+
+/* Tokens de cada maqueta */
+.p-actual { --m-fondo:#FCFBF8; --m-papel:#FFFFFF; --m-tinta:#2C3A31; --m-titulo:#1F2E24; --m-suave:#5F6E65; --m-boton:#E6A93A; --m-boton-txt:#1F2E24; --m-link:#8A6219; --m-sup:#EEF3EC; --m-linea:#E3E8E1; --m-chip:#F7EBD0; --m-chip-txt:#1F2E24; --m-noche:#0E1430; --m-oro:#D9B45A; --m-pie:#1F2E24; --m-velo: linear-gradient(to top, rgb(14 20 48 / .94), rgb(14 20 48 / .78)); }
+.p-a { --m-fondo:#F7F5F0; --m-papel:#FFFFFF; --m-tinta:#262B45; --m-titulo:#141A38; --m-suave:#555B78; --m-boton:#D9B45A; --m-boton-txt:#141A38; --m-link:#7A5A12; --m-sup:#ECEBF3; --m-linea:#E2E0EA; --m-chip:#ECEBF3; --m-chip-txt:#141A38; --m-noche:#0E1430; --m-oro:#D9B45A; --m-pie:#0E1430; --m-velo: linear-gradient(to top, rgb(14 20 48 / .92), rgb(14 20 48 / .6)); }
+.p-b { --m-fondo:#F5EFE4; --m-papel:#FFFCF6; --m-tinta:#2E2723; --m-titulo:#1F2547; --m-suave:#66594D; --m-boton:#C99545; --m-boton-txt:#1F2547; --m-link:#81551C; --m-sup:#EADFCC; --m-linea:#E3D7C3; --m-chip:#EADFCC; --m-chip-txt:#1F2547; --m-noche:#161B3A; --m-oro:#E2BE6E; --m-pie:#1F2547; --m-velo: linear-gradient(to top, rgb(22 27 58 / .92), rgb(22 27 58 / .55)); }
+.p-c { --m-fondo:#F8F6FC; --m-papel:#FFFFFF; --m-tinta:#2A2142; --m-titulo:#1A1236; --m-suave:#5E5675; --m-boton:#5B3FA0; --m-boton-txt:#FFFFFF; --m-link:#5B3FA0; --m-sup:#EEE9F7; --m-linea:#E4DEF0; --m-chip:#EEE9F7; --m-chip-txt:#1A1236; --m-noche:#140E30; --m-oro:#E0B656; --m-pie:#1A1236; --m-velo: linear-gradient(to top, rgb(20 14 48 / .92), rgb(46 26 92 / .5)); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="intro">
+    <span class="eyebrow">Humano Despierto · propuesta de colores · 9 nov 2026</span>
+    <h1>Tres paletas sacadas de las imágenes nuevas</h1>
+    <p>Las fotos que eligió la dueña son azul noche, índigo y violeta con dorado y bronce, más algún pergamino cálido. El sitio hoy usa verde salvia y miel (la paleta «Brote»): el verde no aparece en ninguna imagen y es lo que hace que el conjunto no termine de cerrar. Cada propuesta de abajo está armada con los colores medidos en las fotos y probada sobre una maqueta del sitio con esas mismas imágenes.</p>
+  </header>
+
+  <!-- ACTUAL -->
+  <section class="prop" aria-labelledby="p0">
+    <div class="prop-head">
+      <span class="letter">HOY</span>
+      <h2 id="p0">Brote + acentos cósmicos</h2>
+      <p>La paleta que usa hoy el sitio, para comparar. La portada abre con el cielo, pero al bajar todo vuelve al verde y a la miel, y las fotos azules quedan como recortes que no pertenecen.</p>
+    </div>
+    <div class="grid">
+      <div class="mock p-actual" role="img" aria-label="Maqueta con la paleta actual">
+        <div class="m-nav"><span class="m-logo">Humano Despierto</span><span class="m-links"><span>Cursos</span><span>Docentes</span><span>Diario</span><span>Tarot</span></span></div>
+        <div class="m-hero"><img src="img/hero-nebulosa.webp" alt=""><span class="m-eye">Escuela online</span><h3>Solo hay una pequeña parte del universo que sabrás con certeza que puede ser mejorada</h3><p>Astrología, tarot, constelaciones familiares, magia y gemoterapia.</p><div class="m-btns"><span class="m-btn">Explorar los cursos</span><span class="m-btn ghost">Conocé Humano Despierto</span></div></div>
+        <div class="m-sec"><div><span class="m-eye">Nuestra propuesta</span><h4>La astrología es un lenguaje para comprendernos</h4><p>Carta natal, arquetipos y ciclos planetarios para explorar tus procesos.</p><span class="m-link">Descubrí nuestra propuesta</span></div><div class="m-card"><img src="img/carta-astral-azul.webp" alt=""><div><span class="m-chip">Astrología</span><b>Carta natal esencial</b><small>Inicial · 6 lecciones</small></div></div></div>
+        <div class="m-band"><b>Calendario lunar</b><span>Luna llena · 24 nov</span></div>
+        <div class="m-foot">© 2026 Humano Despierto</div>
+      </div>
+      <div class="side">
+        <div class="sw">
+          <div class="s"><i style="background:#FCFBF8"></i><span><b>Fondo</b><code>#FCFBF8</code></span></div>
+          <div class="s"><i style="background:#1F2E24"></i><span><b>Títulos (bosque)</b><code>#1F2E24</code></span></div>
+          <div class="s"><i style="background:#E6A93A"></i><span><b>Botón (miel)</b><code>#E6A93A</code></span></div>
+          <div class="s"><i style="background:#EEF3EC"></i><span><b>Superficie (salvia)</b><code>#EEF3EC</code></span></div>
+          <div class="s"><i style="background:#0E1430"></i><span><b>Noche</b><code>#0E1430</code></span></div>
+          <div class="s"><i style="background:#D9B45A"></i><span><b>Oro</b><code>#D9B45A</code></span></div>
+        </div>
+        <div class="ratios" aria-label="Contrastes">
+          <div>Texto sobre fondo <b>11.6 : 1</b></div>
+          <div>Texto secundario sobre superficie <b>4.8 : 1</b></div>
+          <div>Texto del botón <b>6.9 : 1</b></div>
+          <div>Link sobre superficie <b>4.9 : 1</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A -->
+  <section class="prop" aria-labelledby="pa">
+    <div class="prop-head">
+      <span class="letter">A</span>
+      <h2 id="pa">Noche y oro</h2>
+      <span class="reco">Recomendada</span>
+      <p>Se saca el verde y todo el sitio pasa a azul noche: los títulos, el texto y el pie toman el tono del cielo de las fotos, y el oro hace de botón. El fondo claro se mantiene, así la lectura larga (cursos, Diario) sigue siendo cómoda. Es el cambio más simple y el que más unifica el sitio.</p>
+    </div>
+    <div class="grid">
+      <div class="mock p-a" role="img" aria-label="Maqueta con la paleta Noche y oro">
+        <div class="m-nav"><span class="m-logo">Humano Despierto</span><span class="m-links"><span>Cursos</span><span>Docentes</span><span>Diario</span><span>Tarot</span></span></div>
+        <div class="m-hero"><img src="img/hero-nebulosa.webp" alt=""><span class="m-eye">Escuela online</span><h3>Solo hay una pequeña parte del universo que sabrás con certeza que puede ser mejorada</h3><p>Astrología, tarot, constelaciones familiares, magia y gemoterapia.</p><div class="m-btns"><span class="m-btn">Explorar los cursos</span><span class="m-btn ghost">Conocé Humano Despierto</span></div></div>
+        <div class="m-sec"><div><span class="m-eye">Nuestra propuesta</span><h4>La astrología es un lenguaje para comprendernos</h4><p>Carta natal, arquetipos y ciclos planetarios para explorar tus procesos.</p><span class="m-link">Descubrí nuestra propuesta</span></div><div class="m-card"><img src="img/carta-astral-azul.webp" alt=""><div><span class="m-chip">Astrología</span><b>Carta natal esencial</b><small>Inicial · 6 lecciones</small></div></div></div>
+        <div class="m-band"><b>Calendario lunar</b><span>Luna llena · 24 nov</span></div>
+        <div class="m-foot">© 2026 Humano Despierto</div>
+      </div>
+      <div class="side">
+        <div class="sw">
+          <div class="s"><i style="background:#F7F5F0"></i><span><b>Fondo</b><code>#F7F5F0</code></span></div>
+          <div class="s"><i style="background:#141A38"></i><span><b>Títulos</b><code>#141A38</code></span></div>
+          <div class="s"><i style="background:#262B45"></i><span><b>Texto</b><code>#262B45</code></span></div>
+          <div class="s"><i style="background:#D9B45A"></i><span><b>Botón (oro)</b><code>#D9B45A</code></span></div>
+          <div class="s"><i style="background:#ECEBF3"></i><span><b>Superficie</b><code>#ECEBF3</code></span></div>
+          <div class="s"><i style="background:#7A5A12"></i><span><b>Links</b><code>#7A5A12</code></span></div>
+        </div>
+        <div class="ratios" aria-label="Contrastes">
+          <div>Texto sobre fondo <b>12.7 : 1</b></div>
+          <div>Texto secundario sobre superficie <b>5.6 : 1</b></div>
+          <div>Texto del botón <b>8.6 : 1</b></div>
+          <div>Link sobre superficie <b>5.4 : 1</b></div>
+        </div>
+        <ul class="pros">
+          <li>Un solo idioma de color de arriba a abajo; las fotos quedan en casa.</li>
+          <li>Reutiliza noche y oro, que ya existen.</li>
+          <li>Se puede aplicar rápido y sin rehacer pantallas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- B -->
+  <section class="prop" aria-labelledby="pb">
+    <div class="prop-head">
+      <span class="letter">B</span>
+      <h2 id="pb">Pergamino estelar</h2>
+      <p>Toma el lado cálido de las imágenes (los libros, el escritorio con cartas y minerales): fondo pergamino, texto sepia, títulos azul noche y botones de bronce. Se siente más artesanal y de «escuela de oficio»; pierde un poco de limpieza en las pantallas de panel y formularios.</p>
+    </div>
+    <div class="grid">
+      <div class="mock p-b" role="img" aria-label="Maqueta con la paleta Pergamino estelar">
+        <div class="m-nav"><span class="m-logo">Humano Despierto</span><span class="m-links"><span>Cursos</span><span>Docentes</span><span>Diario</span><span>Tarot</span></span></div>
+        <div class="m-hero"><img src="img/hero-nebulosa.webp" alt=""><span class="m-eye">Escuela online</span><h3>Solo hay una pequeña parte del universo que sabrás con certeza que puede ser mejorada</h3><p>Astrología, tarot, constelaciones familiares, magia y gemoterapia.</p><div class="m-btns"><span class="m-btn">Explorar los cursos</span><span class="m-btn ghost">Conocé Humano Despierto</span></div></div>
+        <div class="m-sec"><div><span class="m-eye">Nuestra propuesta</span><h4>La astrología es un lenguaje para comprendernos</h4><p>Carta natal, arquetipos y ciclos planetarios para explorar tus procesos.</p><span class="m-link">Descubrí nuestra propuesta</span></div><div class="m-card"><img src="img/libro-constelaciones.webp" alt=""><div><span class="m-chip">Astrología</span><b>Carta natal esencial</b><small>Inicial · 6 lecciones</small></div></div></div>
+        <div class="m-band"><b>Calendario lunar</b><span>Luna llena · 24 nov</span></div>
+        <div class="m-foot">© 2026 Humano Despierto</div>
+      </div>
+      <div class="side">
+        <div class="sw">
+          <div class="s"><i style="background:#F5EFE4"></i><span><b>Fondo</b><code>#F5EFE4</code></span></div>
+          <div class="s"><i style="background:#1F2547"></i><span><b>Títulos</b><code>#1F2547</code></span></div>
+          <div class="s"><i style="background:#2E2723"></i><span><b>Texto (sepia)</b><code>#2E2723</code></span></div>
+          <div class="s"><i style="background:#C99545"></i><span><b>Botón (bronce)</b><code>#C99545</code></span></div>
+          <div class="s"><i style="background:#EADFCC"></i><span><b>Superficie</b><code>#EADFCC</code></span></div>
+          <div class="s"><i style="background:#81551C"></i><span><b>Links</b><code>#81551C</code></span></div>
+        </div>
+        <div class="ratios" aria-label="Contrastes">
+          <div>Texto sobre fondo <b>12.8 : 1</b></div>
+          <div>Texto secundario sobre superficie <b>5.1 : 1</b></div>
+          <div>Texto del botón <b>5.6 : 1</b></div>
+          <div>Link sobre superficie <b>4.9 : 1</b></div>
+        </div>
+        <ul class="pros">
+          <li>La más cálida y con más personalidad.</li>
+          <li>Combina mejor con las fotos de libros y del escritorio.</li>
+          <li>El fondo crema tiñe también paneles y formularios.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- C -->
+  <section class="prop" aria-labelledby="pc">
+    <div class="prop-head">
+      <span class="letter">C</span>
+      <h2 id="pc">Cielo violeta</h2>
+      <p>Sale de la galaxia violeta del hero de Tarot: botones violeta con texto blanco, superficies lavanda y el oro solo como acento sobre lo oscuro. Es la más «mística» y la que más se aleja de lo actual; el violeta es un color muy usado en sitios de tarot y astrología, así que distingue menos.</p>
+    </div>
+    <div class="grid">
+      <div class="mock p-c" role="img" aria-label="Maqueta con la paleta Cielo violeta">
+        <div class="m-nav"><span class="m-logo">Humano Despierto</span><span class="m-links"><span>Cursos</span><span>Docentes</span><span>Diario</span><span>Tarot</span></span></div>
+        <div class="m-hero"><img src="img/hero-galaxia.webp" alt=""><span class="m-eye">Escuela online</span><h3>Solo hay una pequeña parte del universo que sabrás con certeza que puede ser mejorada</h3><p>Astrología, tarot, constelaciones familiares, magia y gemoterapia.</p><div class="m-btns"><span class="m-btn">Explorar los cursos</span><span class="m-btn ghost">Conocé Humano Despierto</span></div></div>
+        <div class="m-sec"><div><span class="m-eye">Nuestra propuesta</span><h4>La astrología es un lenguaje para comprendernos</h4><p>Carta natal, arquetipos y ciclos planetarios para explorar tus procesos.</p><span class="m-link">Descubrí nuestra propuesta</span></div><div class="m-card"><img src="img/tarot-arcanos-dorados.webp" alt=""><div><span class="m-chip">Tarot</span><b>Tarot iniciático</b><small>Maestría · 8 lecciones</small></div></div></div>
+        <div class="m-band"><b>Calendario lunar</b><span>Luna llena · 24 nov</span></div>
+        <div class="m-foot">© 2026 Humano Despierto</div>
+      </div>
+      <div class="side">
+        <div class="sw">
+          <div class="s"><i style="background:#F8F6FC"></i><span><b>Fondo</b><code>#F8F6FC</code></span></div>
+          <div class="s"><i style="background:#1A1236"></i><span><b>Títulos</b><code>#1A1236</code></span></div>
+          <div class="s"><i style="background:#2A2142"></i><span><b>Texto</b><code>#2A2142</code></span></div>
+          <div class="s"><i style="background:#5B3FA0"></i><span><b>Botón (violeta)</b><code>#5B3FA0</code></span></div>
+          <div class="s"><i style="background:#EEE9F7"></i><span><b>Superficie</b><code>#EEE9F7</code></span></div>
+          <div class="s"><i style="background:#E0B656"></i><span><b>Oro (acento)</b><code>#E0B656</code></span></div>
+        </div>
+        <div class="ratios" aria-label="Contrastes">
+          <div>Texto sobre fondo <b>14.0 : 1</b></div>
+          <div>Texto secundario sobre superficie <b>5.8 : 1</b></div>
+          <div>Texto del botón <b>7.9 : 1</b></div>
+          <div>Link sobre superficie <b>6.6 : 1</b></div>
+        </div>
+        <ul class="pros">
+          <li>La de más contraste en todos los pares.</li>
+          <li>Ideal para Tarot y la galaxia.</li>
+          <li>Es la que más cambia el aspecto actual del sitio.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="note" aria-labelledby="next">
+    <h2 id="next" style="font-size:18px">Cómo seguimos</h2>
+    <p>Elegí la que más te guste, o una mezcla (por ejemplo A en todo el sitio con el pergamino de B en el Diario). Con tu elección la aplicamos en todas las pantallas, en celular y en computadora. En las tres, el texto se lee bien sobre su fondo: todos los pares superan el contraste mínimo recomendado para lectura (4.5 : 1).</p>
+  </section>
+</div>
 </body>
 </html>
